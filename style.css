@@ -129,3 +129,21 @@ footer {
              -49vw -15px 30px -10px rgba(0,0,0,0.5);
 }
 
+@media(max-width: 1275px) {
+  .ski-fields {
+    flex-direction: column;
+  }
+
+  .field {
+    padding-top: 100px;
+  }
+
+  .field-image {
+    width: 80vw;
+    height: calc(80vw/1.5);
+  }
+
+  footer .logo img {
+    height: 60px;
+  }
+}
