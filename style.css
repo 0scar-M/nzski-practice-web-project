@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  display: inline-block;
+  padding: 20px;
+}
+
+.navbar a:hover {
+  color: grey;
+}
+
+.navbar .logo {
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 75vh;
+  box-shadow: 49vw 15px 30px -10px rgba(0,0,0,0.5),
+             -49vw 15px 30px -10px rgba(0,0,0,0.5);
+  margin-bottom: 100px;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: larger;
+  padding-top: 50px;
+}
+
+.ski-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Figtree";
+}
+
+#coronet-image {
+  background-image: url("images/coronet.jpg");
+}
+
+#remarks-image {
+  background-image: url("images/remarks.jpg");
+}
+
+#mt-hutt-image {
+  background-image: url("images/mt-hutt.jpg");
+}
+
+#coronet-image, #remarks-image, #mt-hutt-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.field-image {
+  width: 400px;
+  height: calc(400px/1.5);
+}
+
+.field-image h1 {
+  font-size: 150%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 15.75%;
+}
+
+.field {
+  text-decoration: none;
+}
+
+.field p {
+  margin: auto;
+  padding: 30px 0;
+  width: 250px;
+  text-align: center;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+footer .logo img {
+  height: 100px;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: right;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 49vw -15px 30px -10px rgba(0,0,0,0.5),
+             -49vw -15px 30px -10px rgba(0,0,0,0.5);
+}
+
+@media(max-width: 1275px) {
+  .ski-fields {
+    flex-direction: column;
+  }
+
+  .field {
+    padding-top: 100px;
+  }
+
+  .field-image {
+    width: 80vw;
+    height: calc(80vw/1.5);
+  }
+
+  footer .logo img {
+    height: 60px;
+  }
+}
